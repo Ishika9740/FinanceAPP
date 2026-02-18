@@ -97,3 +97,25 @@ h2 {
 .hidden {
     display: none;
 }
+/* 8. The Image Layers */
+.layer {
+    position: absolute; /* This allows them to stack */
+    top: 10%; /* Adjusts vertical position */
+    left: 25%; /* Adjusts horizontal position */
+    width: 50%; /* Keeps them contained */
+    transition: opacity 0.5s ease-in-out; /* Smooth fade in */
+}
+
+.base {
+    z-index: 1; /* Bottom layer */
+    opacity: 0.5; /* Make the empty room faint until filled */
+}
+
+.upgrade {
+    z-index: 2; /* Top layer */
+}
+
+/* 9. The "Hidden" Class (for things you haven't earned) */
+.hidden {
+    opacity: 0 !important; /* Makes it invisible */
+}

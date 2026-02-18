@@ -74,6 +74,14 @@ function handleChoice(optionIndex) {
 
     // 1. Update State
     state.money -= choice.cost;
+    // CHECK FOR UPGRADES
+    // If money is greater than $250, show the desk
+    if (state.money >= 250) {
+        document.getElementById('item-desk').classList.remove('hidden');
+    } else {
+        // Optional: Hide it if they go broke again
+        document.getElementById('item-desk').classList.add('hidden');
+    }
     state.happiness += choice.happiness;
     state.day += 1;
 
