@@ -1,0 +1,77 @@
+/* 1. The Global Setup */
+body {
+    background-color: #111b21; /* Dark Background */
+    color: white;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    margin: 0;
+}
+
+/* 2. The Game Container (Mobile Shape) */
+.game-wrapper {
+    width: 350px;
+    background-color: #202f36;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+/* 3. The Stats Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #111b21;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.stat-box {
+    font-weight: bold;
+    color: #00cd9c; /* Duolingo Green */
+}
+
+/* 4. The Room (Temporary Box) */
+.room-container {
+    background-color: #2c3e50;
+    height: 200px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #4b5c6b;
+}
+
+/* 5. The Buttons */
+.button-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.choice-btn {
+    background-color: #2b3b45;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+    border-bottom: 4px solid #1c272e; /* 3D effect */
+}
+
+.choice-btn:hover {
+    background-color: #364954;
+    transform: translateY(-2px);
+}
+
+.choice-btn:active {
+    transform: translateY(2px);
+    border-bottom: none;
+}

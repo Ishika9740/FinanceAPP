@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Fortress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-wrapper">
+        <div class="header">
+            <div class="stat-box">
+                <span class="icon">💰</span>
+                <span id="money-display">$200</span>
+            </div>
+            <div class="stat-box">
+                <span class="icon">❤️</span>
+                <span id="happiness-display">100</span>
+            </div>
+            <div class="stat-box">
+                <span class="icon">📅</span>
+                <span id="day-display">Day 1</span>
+            </div>
+        </div>
+
+        <div class="room-container">
+            <div class="room-placeholder">
+                Your Room (Images coming soon)
+            </div>
+        </div>
+
+        <div class="scenario-card">
+            <h2 id="scenario-text">Your phone screen just cracked. What do you do?</h2>
+            
+            <div class="button-grid">
+                <button class="choice-btn" onclick="console.log('Clicked A')">
+                    Fix it ($80)
+                </button>
+                <button class="choice-btn" onclick="console.log('Clicked B')">
+                    Ignore it ($0)
+                </button>
+            </div>
+            
+            <p id="feedback-text" class="hidden"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
